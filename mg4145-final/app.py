@@ -12,7 +12,6 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template("index.html")
-    #return "Hello World!"
 
     #<b> </b> This is HTML code for bold
 
