@@ -10,15 +10,15 @@ app = Flask(__name__)
 
 #static route
 @app.route("/")
-def hello():
+def root():
     return render_template("index.html")
 
 @app.route("/Classes")
-def home():
+def courses():
     return render_template("Classes.html")
 
 @app.route("/Linux")
-def columbia():
+def linux():
     return render_template("Linux.html")
 
 #start the server
