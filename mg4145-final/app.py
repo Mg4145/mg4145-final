@@ -15,16 +15,14 @@ def hello():
 
     #<b> </b> This is HTML code for bold
 
-@app.route("/1006")
+@app.route("/Classes")
 def home():
     #return"<p> This is my <b>1006</b> website.<p>"
-    return render_template("1006.html")
+    return render_template("Classes.html")
 
-@app.route("/columbia")
+@app.route("/Assignments")
 def columbia():
-    return "Columbia!"
-
-#This is a comment
+    return render_template("Assignments.html")
 
 #start the server
 if __name__ == "__main__":
