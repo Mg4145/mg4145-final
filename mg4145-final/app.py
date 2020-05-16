@@ -13,16 +13,13 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
-    #<b> </b> This is HTML code for bold
-
 @app.route("/Classes")
 def home():
-    #return"<p> This is my <b>1006</b> website.<p>"
     return render_template("Classes.html")
 
-@app.route("/Assignments")
+@app.route("/Linux")
 def columbia():
-    return render_template("Assignments.html")
+    return render_template("Linux.html")
 
 #start the server
 if __name__ == "__main__":
